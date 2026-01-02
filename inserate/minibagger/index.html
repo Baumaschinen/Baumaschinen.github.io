@@ -3,60 +3,433 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Minibagger Inserate | Kaufen & Verkaufen (neu & gebraucht)</title>
-  <meta name="description" content="Minibagger Inserate: neue und gebrauchte Minibagger kaufen/verkaufen. Tipps von Profis, Bilder/Videos, Technikdaten und Dokumente (wenn verfügbar)." />
-  <link rel="canonical" href="https://baumaschinen.github.io/inserate/minibagger/" />
+  <title>Minibagger gebraucht kaufen | Inserate, Mietpark, Marken & Profi-Tipps</title>
+  <meta name="description" content="Minibagger-Marktplatz: Inserate & Kleinanzeigen (neu/gebraucht), Mietpark & Leasing, Ersatzteile, Technik-Checks, Hersteller-Überblick (Takeuchi, Kubota, Yanmar, Komatsu u. a.) und Profi-Tipps für den Kauf gebrauchter Minibagger." />
   <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://baumaschinen.github.io/minibagger/" />
+
+  <meta property="og:title" content="Minibagger gebraucht kaufen | Inserate, Mietpark, Marken & Profi-Tipps" />
+  <meta property="og:description" content="Minibagger finden: Inserate, Mietpark, Ersatzteile, Technik-Checks und Hersteller-Überblick – optimiert für Longtail-Suche." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://baumaschinen.github.io/minibagger/" />
+
   <style>
-    :root{--bg:#f6f7f9;--card:#fff;--text:#111827;--muted:#4b5563;--link:#0f766e;--border:#e5e7eb;--accent:#f97316;--shadow:0 10px 30px rgba(0,0,0,.10);--radius:18px}
-    *{box-sizing:border-box} html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
-    a{color:var(--link);text-decoration:none} a:hover{text-decoration:underline}
-    .container{max-width:1100px;margin:0 auto;padding:20px}
-    header{position:sticky;top:0;background:rgba(246,247,249,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);z-index:10}
-    nav{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px} nav a{padding:8px 10px;border:1px solid var(--border);border-radius:12px;background:#fff}
-    .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow)}
-    .muted{color:var(--muted)} .h1{font-size:30px;line-height:1.2;margin:0 0 10px}
-    .quote{margin:12px 0 0 0;padding:12px 14px;border-left:4px solid var(--accent);background:rgba(249,115,22,.08);border-radius:14px}
-    footer{border-top:1px solid var(--border);margin-top:26px;padding-top:18px}
+    :root{
+      --bg:#f6f7f9;
+      --surface:#ffffff;
+      --surface2:#fff7f0;
+      --text:#111827;
+      --muted:#4b5563;
+      --border:#e5e7eb;
+      --brand:#f97316;     /* Orange */
+      --brand2:#fb923c;    /* Orange Light */
+      --link:#0f172a;
+      --shadow: 0 10px 30px rgba(17,24,39,.08);
+      --radius: 16px;
+      --max: 1120px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.65}
+    a{color:inherit}
+    a:hover{opacity:.9}
+    .wrap{max-width:var(--max);margin:0 auto;padding:22px}
+    .skip{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip:focus{left:16px;top:16px;width:auto;height:auto;background:#000;color:#fff;padding:10px;border-radius:8px;z-index:9999}
+
+    header{
+      position:sticky;top:0;z-index:30;
+      background:rgba(246,247,249,.85);
+      backdrop-filter: blur(10px);
+      border-bottom:1px solid var(--border);
+    }
+    .nav{display:flex;gap:14px;align-items:center;justify-content:space-between;max-width:var(--max);margin:0 auto;padding:12px 22px}
+    .brand{display:flex;gap:10px;align-items:center;text-decoration:none}
+    .logo{
+      width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--brand),var(--brand2));
+      box-shadow: var(--shadow);
+    }
+    .brand b{letter-spacing:.2px}
+    .menu{display:flex;gap:10px;flex-wrap:wrap}
+    .pill{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:8px 12px;border-radius:999px;border:1px solid var(--border);
+      background:var(--surface);text-decoration:none;font-size:14px;
+    }
+    .pill.primary{border-color:transparent;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff}
+
+    .hero{
+      background:linear-gradient(180deg, var(--surface2), var(--bg));
+      border-bottom:1px solid var(--border);
+    }
+    .heroGrid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:start}
+    @media (max-width: 900px){ .heroGrid{grid-template-columns:1fr} }
+
+    h1{font-size:clamp(28px,3vw,40px);line-height:1.15;margin:8px 0 10px}
+    .lead{font-size:17px;color:var(--muted);margin:0 0 14px}
+    .cta{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 0}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      padding:10px 14px;border-radius:12px;border:1px solid var(--border);
+      background:var(--surface);text-decoration:none;font-weight:600;
+    }
+    .btn.primary{border-color:transparent;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff}
+
+    .card{
+      background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+      box-shadow: var(--shadow);padding:16px;
+    }
+    .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
+    @media (max-width: 700px){ .kpis{grid-template-columns:1fr} }
+    .kpi{padding:12px;border-radius:14px;border:1px solid var(--border);background:#fff}
+    .kpi b{display:block}
+    .kpi span{color:var(--muted);font-size:14px}
+
+    main{padding:18px 0 28px}
+    h2{margin:24px 0 10px;font-size:22px}
+    h3{margin:18px 0 8px;font-size:18px}
+    p{margin:0 0 12px}
+    .muted{color:var(--muted)}
+    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    @media (max-width: 900px){ .grid2{grid-template-columns:1fr} }
+
+    blockquote{
+      margin:12px 0;padding:12px 14px;border-left:4px solid var(--brand);
+      background:var(--surface2);border-radius:12px;color:#1f2937
+    }
+
+    figure{margin:0}
+    .imgCard{overflow:hidden}
+    .imgWrap{border-radius:14px;overflow:hidden;border:1px solid var(--border);background:#fff}
+    img{max-width:100%;height:auto;display:block}
+    figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+
+    ul{margin:0 0 12px 18px}
+    .tagRow{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 0}
+    .tag{font-size:12px;border:1px solid var(--border);background:#fff;border-radius:999px;padding:6px 10px;color:#374151}
+
+    .anchor{color:var(--muted);font-size:13px}
+    .hr{height:1px;background:var(--border);margin:18px 0}
+
+    /* Simple Lightbox */
+    .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.75);display:none;align-items:center;justify-content:center;padding:18px;z-index:999}
+    .lightbox.open{display:flex}
+    .lightboxInner{max-width:1100px;width:100%}
+    .lightboxTop{display:flex;justify-content:flex-end;margin-bottom:10px}
+    .closeBtn{
+      background:#fff;border:0;border-radius:10px;padding:10px 12px;font-weight:700;cursor:pointer
+    }
+    .lightImg{border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.25)}
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"CollectionPage",
+    "name":"Minibagger gebraucht kaufen – Inserate, Mietpark, Marken & Profi-Tipps",
+    "url":"https://baumaschinen.github.io/minibagger/",
+    "inLanguage":"de",
+    "about":[{"@type":"Thing","name":"Minibagger"},{"@type":"Thing","name":"Gebrauchte Baumaschinen"},{"@type":"Thing","name":"Mietpark"}]
+  }
+  </script>
 </head>
+
 <body>
+<a class="skip" href="#content">Zum Inhalt springen</a>
+
 <header>
-  <div class="container">
-    <div style="font-weight:800">baumaschinen</div>
-    <div class="muted" style="font-size:13px">Minibagger • Inserate (Listings) • Kaufen/Verkaufen</div>
-    <nav>
-      <a href="/">Start (Home)</a>
-      <a href="/inserate/">Inserate (Listings)</a>
-    </nav>
-  </div>
+  <nav class="nav" aria-label="Hauptnavigation">
+    <a class="brand" href="/" title="Startseite Baumaschinen">
+      <span class="logo" aria-hidden="true"></span>
+      <span><b>Baumaschinen</b><span class="muted">.github.io</span></span>
+    </a>
+    <div class="menu">
+      <a class="pill" href="/kategorien/">Kategorien</a>
+      <a class="pill" href="/inserate/">Inserate</a>
+      <a class="pill" href="/mietpark/">Mietpark</a>
+      <a class="pill" href="/ersatzteile/">Ersatzteile</a>
+      <a class="pill primary" href="/minibagger/" aria-current="page">Minibagger</a>
+    </div>
+  </nav>
 </header>
 
-<main class="container">
-  <section class="card">
-    <h1 class="h1">Minibagger Inserate (neu & gebraucht)</h1>
-    <p class="muted">
-      Diese Kategorie ist ein Platzhalter (placeholder). Hier werden künftig Minibagger-Angebote als Inserate gelistet – mit Technikdaten,
-      Bildern/Videos und Hinweisen zur Dokumentation (wenn verfügbar).
-    </p>
+<section class="hero">
+  <div class="wrap">
+    <div class="heroGrid">
+      <div>
+        <p class="anchor">Kategorie / Minibagger</p>
+        <h1>Minibagger gebraucht kaufen – Inserate, Mietpark, Marken & Profi-Tipps</h1>
+        <p class="lead">
+          Hier findest du Minibagger-Inserate (neu & gebraucht), Mietpark-Optionen, Ersatzteile sowie praxisnahe Kauf- und Technik-Infos.
+          Fokus: <b>Minibagger gebraucht kaufen</b> – mit Checklisten, Hersteller-Überblick und typischen Modellen.
+        </p>
 
-    <blockquote class="quote">
-      <strong>Profi-Tipp:</strong> Beim Minibagger-Gebrauchtkauf sind Hydraulik, Spiel an Lagerstellen, Fahrwerkzustand und saubere Medien (Detailfotos) entscheidend.
-    </blockquote>
+        <blockquote>
+          Profi-Kurzregel: Ein „günstiger“ Minibagger wird teuer, wenn Hydraulik, Laufwerk oder Dokumente nicht passen.
+          Nutze die Checkliste unten – und vergleiche Inserate nach Zustand, Servicehistorie und Einsatzzweck.
+        </blockquote>
 
-    <h2 style="font-size:18px;margin:16px 0 10px">Was kommt hier rein?</h2>
+        <div class="cta">
+          <a class="btn primary" href="#inserate">Zu den Minibagger-Inseraten</a>
+          <a class="btn" href="#kaufcheck">Kauf-Checkliste</a>
+          <a class="btn" href="#hersteller">Hersteller & Modelle</a>
+        </div>
+
+        <div class="kpis" role="list" aria-label="Kurzüberblick">
+          <div class="kpi" role="listitem">
+            <b>Inserate & Kleinanzeigen</b>
+            <span>Strukturiert nach Gewichtsklasse, Einsatz & Zustand</span>
+          </div>
+          <div class="kpi" role="listitem">
+            <b>Mietpark & Leasing</b>
+            <span>Tage-, Wochen- oder Monatsmiete – passend zum Projekt</span>
+          </div>
+          <div class="kpi" role="listitem">
+            <b>Ersatzteile & Anbaugeräte</b>
+            <span>Filter, Buchsen, Bolzen, Schnellwechsler, Hammer & mehr</span>
+          </div>
+        </div>
+
+        <div class="tagRow" aria-label="Themen-Tags">
+          <span class="tag">Minibagger Inserate</span>
+          <span class="tag">Minibagger gebraucht</span>
+          <span class="tag">Kompaktbagger</span>
+          <span class="tag">Zero Tail</span>
+          <span class="tag">Gummiketten</span>
+          <span class="tag">Mietpark</span>
+        </div>
+      </div>
+
+      <div class="card imgCard">
+        <figure>
+          <div class="imgWrap">
+            <a href="#" id="openImg" aria-label="Bild vergrößern">
+              <img
+                src="https://www.ito-germany.de/wp-content/uploads/2025/09/B7-Sigma_Yanmar-scaled.jpg"
+                alt="Gebrauchter 8-Tonnen-Minibagger (Yanmar B7 Sigma) Baujahr 2007, Seitenansicht, auf Lagerplatz fotografiert."
+                loading="lazy"
+              />
+            </a>
+          </div>
+          <figcaption>
+            Beispielbild: 8-t Minibagger (Yanmar B7 Sigma, BJ 2007, ca. 4.300 h abgelesen, 450-mm Kettenbreite) – ideal als Referenz für Inserat-Fotos (Seitenansicht, Zustand, Laufwerk).
+          </figcaption>
+        </figure>
+        <div class="hr"></div>
+        <p class="muted" style="margin:0">
+          Tipp: Gute Inserate zeigen immer <b>Laufwerk</b>, <b>Hydraulikleitungen</b>, <b>Ausleger/Spiel</b>, <b>Stiel</b>, <b>Bolzen/Buchsen</b>, <b>Motorraum</b> und <b>Typenschild/Dokumente</b>.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main id="content" class="wrap">
+  <section class="grid2">
+    <div class="card">
+      <h2>Was ist ein Minibagger?</h2>
+      <p>
+        Ein <b>Minibagger</b> ist ein kompakter Hydraulikbagger (meist Raupenfahrwerk) für Erd-, Tief- und GaLaBau-Arbeiten,
+        Abbruch-Nebenarbeiten, Leitungsbau und enge Baustellen. Er überzeugt durch geringe Abmessungen, flexible Anbaugeräte
+        (Löffel, Greifer, Hammer, Erdbohrer) und eine hohe Präzision beim Planieren, Graben und Versetzen.
+      </p>
+      <h3>Begriffe kurz erklärt</h3>
+      <ul>
+        <li><b>Microbagger</b>: sehr klein (typisch ~0,8–1,2 t) – für Hauszugang, Hinterhöfe, Innenabbruch.</li>
+        <li><b>Minibagger</b>: kompakt (typisch ~1–6 t) – Allrounder für GaLaBau, Leitungsbau, kleinere Baustellen.</li>
+        <li><b>Kompaktbagger / Kurzheckbagger</b>: gebaut für enge Räume, oft mit geringem Hecküberstand.</li>
+        <li><b>Hüllkreisbagger / Zero Tail</b>: Oberwagen bleibt beim Schwenken im Fahrwerks-Umriss – sicher an Mauern/Verkehr.</li>
+        <li><b>Midi-Bagger</b>: meist ~6–10 t – mehr Reichweite/Leistung, aber noch „kompakt“ einsetzbar.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Ketten: Gummi, Stahl, Pads & „Roadliner“</h2>
+      <p>
+        Viele Minibagger fahren auf <b>Gummiketten</b>: leise, bodenschonend, ideal für Pflaster/Asphalt – dafür empfindlicher gegen scharfen Schotter und Stahlkanten.
+        <b>Stahlketten</b> sind robuster (Steinbruch, Recycling, harte Untergründe), können aber Oberflächen beschädigen.
+      </p>
+      <p>
+        Für Stahlketten gibt es <b>Pads / Gummibodenplatten</b> (umgangssprachlich oft „Roadliner“): gummierte Auflagen, die die Oberfläche schützen
+        und den Einsatz in städtischen Bereichen erleichtern. Je nach System werden Pads als <i>Chain-On</i> (ersetzen Stahlbodenplatten),
+        <i>Bolt-On</i> (auf Stahlplatten geschraubt) oder <i>Clip-On</i> (schnell geklemmt) montiert.
+      </p>
+      <blockquote>
+        Praxis: Wer häufig zwischen Baustelle und Straße wechselt, spart mit Pads Schäden am Belag – und reduziert Ärger beim Kunden.
+      </blockquote>
+    </div>
+  </section>
+
+  <section id="kaufcheck" class="card">
+    <h2>Gebrauchte Minibagger kaufen: Profi-Checkliste (Kurzfassung)</h2>
     <ul>
-      <li>Inserate (Listings) für Minibagger: kaufen/verkaufen, neu & gebraucht</li>
-      <li>Optionale Filter: Gewichtsklasse, Baujahr, Stunden, Ausstattung</li>
-      <li>Links zu Profi-Ratgebern (Guides) und Dokumenten (Documents)</li>
+      <li><b>Hydraulik</b>: Zylinder dicht? Schläuche rissfrei? Pumpe ruhig? Funktionen unter Last testen.</li>
+      <li><b>Laufwerk</b>: Kettenzustand, Rollen, Leiträder, Antriebsrad, Kettenspannung – das ist oft der teuerste Posten.</li>
+      <li><b>Spiel & Verschleiß</b>: Bolzen/Buchsen am Ausleger/Stiel/Löffel – „Klappern“ kostet später richtig Geld.</li>
+      <li><b>Motor</b>: Kaltstart, Rauchbild, Leckagen, Serviceintervalle, Filter/Öle, Kühlkreislauf.</li>
+      <li><b>Elektrik & Steuerung</b>: Warnlampen, Joysticks, Display, Sicherheitsfunktionen, Schwenkwerk.</li>
+      <li><b>Dokumente</b>: Bedienungsanleitung, Wartungsnachweise, Ersatzteilinfos, ggf. CE-Unterlagen/Typenschild.</li>
+      <li><b>Einsatzprofil</b>: Gartenbau ≠ Abbruch ≠ Steinbruch – wähle Schutzpakete, Kettenart und Anbaugeräte passend.</li>
     </ul>
-
-    <p class="muted" style="margin-top:12px">
-      Zurück zur Übersicht: <a href="/inserate/"><strong>Inserate & Kategorien</strong></a>
+    <p class="muted">
+      Longtail-Tipp für Inhalte: Baue später einzelne Ratgeberseiten zu konkreten Fragen (z. B. „Minibagger gebraucht kaufen ohne Besichtigung“,
+      „Laufwerk prüfen“, „Hydrauliktest“, „Minibagger mieten vs. kaufen“) – das rankt sehr sauber und wirkt nicht spammy.
     </p>
   </section>
+
+  <section id="inserate" class="card">
+    <h2>Minibagger-Inserate & Angebote</h2>
+    <p>
+      Dieser Bereich ist als Einstieg zu deinen künftigen Inseraten gedacht. Du kannst hier später automatisch Listen einblenden (z. B. aus JSON/CSV),
+      oder manuell einzelne Top-Angebote vorstellen.
+    </p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Gebrauchte Minibagger</h3>
+        <p class="muted">Filter nach Gewichtsklasse (1–2 t, 2–3 t, 3–5 t, 5–8 t), Baujahr, Stunden, Zustand, Anbaugeräte.</p>
+        <a class="btn primary" href="/inserate/minibagger/">Zu den gebrauchten Minibagger-Inseraten</a>
+      </div>
+      <div class="card">
+        <h3>Mietpark-Minibagger</h3>
+        <p class="muted">Tage-/Wochen-/Monatsmiete – inklusive Transportoptionen und passendem Anbaugerät.</p>
+        <a class="btn" href="/mietpark/minibagger/">Zu den Mietpark-Optionen</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="hersteller" class="card">
+    <h2>Bekannte Minibagger-Hersteller: Marken, Herkunft & Modellbeispiele</h2>
+    <p class="muted">
+      Hinweis: Modellbeispiele dienen zur Orientierung in Inseraten (Baureihen/Typen). Je nach Markt können Bezeichnungen leicht variieren.
+    </p>
+
+    <h3 id="takeuchi">Takeuchi (Japan)</h3>
+    <p>
+      Takeuchi gilt als Pionier im Bereich kompakter Bagger und ist besonders bei Profis beliebt, die Wert auf robuste Bauweise, starke Hydraulik und praxisnahe Details legen.
+      Der Hauptsitz liegt in <b>Sakaki (Nagano, Japan)</b>. Typisch für Takeuchi-Minibagger sind solide Unterwagen, gut zugängliche Wartungspunkte und ein sehr „mechanisch ehrliches“
+      Fahrgefühl. Für den Gebrauchtkauf lohnt sich ein genauer Blick auf Laufwerk und Drehkranzspiel – die Maschinen werden häufig im harten Alltag eingesetzt.
+      In Deutschland sind Takeuchi-Geräte über ein breites Händlernetz verfügbar.
+    </p>
+    <p><b>Modellbeispiele:</b> TB216, TB225, TB235-2, TB240, TB257FR, TB290-2</p>
+
+    <h3 id="kubota">Kubota (Japan)</h3>
+    <p>
+      Kubota ist weltweit stark bei kompakten Maschinen und hat seinen Head Office in <b>Osaka (Japan)</b>. In Inseraten fallen Kubota-Minibagger oft durch gute Ersatzteilverfügbarkeit,
+      hohe Wiederverkaufswerte und ein sehr breites Programm auf – von Micro- bis zur 8-Tonnen-Klasse. Viele Mietparks setzen auf Kubota, weil Bedienung und Service für Flottenbetrieb
+      gut kalkulierbar sind. Beim Gebrauchtkauf sind typische Prüfpunkte: Hydraulikdichtheit (Zylinder), Zustand der Gummiketten und Servicehistorie (Öle/Filter).
+      Für den Longtail-Content kannst du Kubota-Spezialseiten bauen (z. B. „Kubota U-Serie gebraucht“, „KX-Serie Kaufberatung“).
+    </p>
+    <p><b>Modellbeispiele:</b> K008-5, U10-5, U17-3α, U27-4, KX019-4, KX057-4</p>
+
+    <h3 id="yanmar">Yanmar (Japan)</h3>
+    <p>
+      Yanmar ist im Kompaktsegment sehr bekannt und führt seine Zentrale in <b>Osaka (Japan)</b>. In Europa sind Yanmar-Minibagger weit verbreitet – sowohl im Händlerverkauf als auch im Mietpark.
+      Yanmar ist stark bei Kurzheck-Konzepten und Maschinen, die in engen Baustellen funktionieren. Beim Gebrauchtkauf lohnt sich ein Blick auf die Hydraulikleistung unter Last,
+      sowie auf Spiel an Ausleger und Stiel, weil viele Geräte im Leitungs- und Gartenbau intensiv laufen. Für SEO-Inhalte kannst du sehr gut nach Klassen aufteilen:
+      „Yanmar 1-t Microbagger“, „Yanmar 2,5-t Minibagger“, „Yanmar 5-t Kurzheck“ etc.
+    </p>
+    <p><b>Modellbeispiele:</b> ViO10, ViO17, ViO23, ViO33, ViO38, ViO57</p>
+
+    <h3 id="komatsu">Komatsu (Japan)</h3>
+    <p>
+      Komatsu ist einer der größten Baumaschinenhersteller weltweit; der Hauptsitz liegt in <b>Tokio</b> (mit temporärer HQ-Relocation 2024–2026 innerhalb Tokios).
+      Im Minibaggerbereich sind Komatsu-Geräte bekannt für solide Grundkonstruktion und gute Standfestigkeit. Auf dem Gebrauchtmarkt trifft man viele Maschinen aus dem GaLaBau,
+      kommunalen Einsatz und Mietflotten. Prüfe bei gebrauchten Komatsu-Minibaggern besonders das Laufwerk (Rollen/Antriebsrad), die Hydraulikfunktion bei warmem Öl
+      und die allgemeine Wartungsdisziplin. Als Content-Idee: „Komatsu MR-Serie Kurzheck – gebraucht kaufen“ mit typischen Schwachstellen/Checks.
+    </p>
+    <p><b>Modellbeispiele:</b> PC09-1, PC16R-3, PC17R-5, PC18MR-5, PC24MR-5, PC26MR-5</p>
+
+    <h3 id="hitachi">Hitachi Construction Machinery (Japan)</h3>
+    <p>
+      Hitachi Construction Machinery hat sein Head Office in <b>Taito-ku, Tokio (Japan)</b> und ist vor allem für zuverlässige Bagger-Baureihen bekannt.
+      Im kompakten Segment sind Hitachi-Minibagger häufig dort zu finden, wo ein ausgewogener Mix aus Präzision, Robustheit und Service gefragt ist.
+      Beim Gebrauchtkauf solltest du auf saubere Hydraulik (kein Ruckeln, kein pfeifendes Pumpengeräusch), Zustand von Bolzen/Buchsen sowie auf mögliche Risse/Schweißstellen achten,
+      wenn die Maschine im Abbruch gelaufen ist. Für SEO eignet sich Hitachi sehr gut über die ZX-Baureihen („ZX17U-6 gebraucht“, „ZX33U-6 kaufen“).
+    </p>
+    <p><b>Modellbeispiele:</b> ZX10U-6, ZX17U-6, ZX19U-6, ZX26U-6, ZX33U-6, ZX38U-6</p>
+
+    <h3 id="kobelco">Kobelco (Japan)</h3>
+    <p>
+      Kobelco ist im Baggerbereich ein sehr etablierter Name; das Unternehmen weist u. a. ein <b>Tokyo Headquarters</b> aus und betreibt für Europa eine eigene Organisation.
+      Kobelco-Minibagger sind häufig bei Betrieben zu sehen, die Wert auf feinfühlige Hydraulik und gute Kabinen/Ergonomie legen.
+      Für den Gebrauchtkauf gilt: Prüfe Laufwerk und Schwenkwerk besonders sorgfältig, da viele Maschinen in engen Baustellen viel drehen und rangieren.
+      In Inseraten helfen dir klare Angaben zu Gewichtsklasse, Heckkonzept (Kurzheck/Zero Tail) und zu Zusatzhydrauliken (Hammerleitung, Greiferleitung).
+    </p>
+    <p><b>Modellbeispiele:</b> SK10SR, SK17SR, SK18SR, SK20SR, SK26SR, SK30SR</p>
+
+    <h3 id="cat">Caterpillar / CAT (USA)</h3>
+    <p>
+      Caterpillar ist global stark in Bau- und Mining-Technik; die Unternehmenskommunikation nennt den Standort <b>Irving, Texas (USA)</b> als globale HQ-Adresse.
+      CAT-Minibagger sind im Markt sehr präsent, weil sie oft als „System“ verkauft werden: Maschine, Service, Verschleißteile, Telematik.
+      Für gebrauchte CAT-Minibagger sind Wartungsnachweise besonders relevant – viele Geräte laufen in Flotten, was Vorteile (regelmäßiger Service) oder Nachteile (viel Einsatz)
+      haben kann. Für SEO: „CAT 301.7 CR gebraucht kaufen“ oder „CAT 303 CR Minibagger Angebot“ sind typische Suchmuster.
+    </p>
+    <p><b>Modellbeispiele:</b> 300.9D, 301.5, 301.7 CR, 302 CR, 303 CR, 305 CR</p>
+
+    <h3 id="wacker">Wacker Neuson (Deutschland)</h3>
+    <p>
+      Wacker Neuson ist im DACH-Markt extrem bekannt und hat seinen Sitz in <b>München (Deutschland)</b>. Im Minibagger-Segment ist die Marke stark,
+      weil viele Geräte speziell für enge Baustellen, Servicezugang und Mietflotten-Tauglichkeit ausgelegt sind.
+      Für den Gebrauchtkauf lohnt ein Blick auf Anbaugeräte-Hydraulik (Zusatzkreise), Kabinenzustand (Mietflotte?) und auf das Fahrwerk.
+      Content-Idee: „Wacker Neuson Zero-Tail / EZ-Serie vs. ET-Serie“ – das ist ein Klassiker für Longtail-Traffic.
+    </p>
+    <p><b>Modellbeispiele:</b> EZ17, EZ26, ET16, ET18, ET24, ET35</p>
+
+    <h3 id="ihi">IHI (Japan)</h3>
+    <p>
+      IHI ist ein japanischer Industriekonzern mit Head Office in <b>Tokio (Japan)</b>; im Kompaktbereich sind IHI-Minibagger (je nach Markt) über Fachhändler und Partner verfügbar.
+      In Inseraten tauchen IHI-Geräte oft als wendige, zuverlässige Maschinen für GaLaBau und Servicearbeiten auf.
+      Wichtig beim Gebrauchtkauf: Bei weniger verbreiteten Modellen vorab prüfen, wie Ersatzteilversorgung und Händler-Support in deiner Region aussehen.
+      Für SEO kannst du IHI sinnvoll über „seltenere Marken“ positionieren („IHI Minibagger gebraucht – Erfahrungen, Teile, Service“).
+    </p>
+    <p><b>Modellbeispiele:</b> 9VX, 12VXE, 15VX, 17VXT, 19VXT, 35V4</p>
+  </section>
+
+  <section class="card">
+    <h2>So verlinkst du intern (ohne Spam)</h2>
+    <ul>
+      <li>Von der Startseite nur 5–8 starke Links: <b>/minibagger/</b>, <b>/raupendumper/</b>, <b>/ersatzteile/</b>, <b>/mietpark/</b>, <b>/dokumente/</b>, <b>/inserate/</b></li>
+      <li>Auf dieser Seite: „Zu den Inseraten“ → <b>/inserate/minibagger/</b></li>
+      <li>Später einzelne Ratgeber: z. B. <b>/ratgeber/minibagger-gebraucht-kaufen/</b> und von dort zurück auf Inserate</li>
+    </ul>
+  </section>
+
+  <footer class="muted" style="padding:16px 4px 26px">
+    <div class="hr"></div>
+    <p style="margin:0">
+      © <span id="y"></span> Baumaschinen.github.io – Kategorie: Minibagger
+    </p>
+  </footer>
 </main>
 
-<footer class="container"><p class="muted">© baumaschinen</p></footer>
+<div class="lightbox" id="lb" role="dialog" aria-modal="true" aria-label="Bild vergrößert anzeigen">
+  <div class="lightboxInner">
+    <div class="lightboxTop">
+      <button class="closeBtn" id="closeLb" type="button">Schließen</button>
+    </div>
+    <div class="lightImg">
+      <img
+        src="https://www.ito-germany.de/wp-content/uploads/2025/09/B7-Sigma_Yanmar-scaled.jpg"
+        alt="Gebrauchter 8-Tonnen-Minibagger (Yanmar B7 Sigma) – vergrößerte Ansicht."
+        loading="lazy"
+      />
+    </div>
+  </div>
+</div>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+
+  const lb = document.getElementById("lb");
+  const open = document.getElementById("openImg");
+  const close = document.getElementById("closeLb");
+
+  function openLb(e){ e.preventDefault(); lb.classList.add("open"); close.focus(); }
+  function closeLb(){ lb.classList.remove("open"); open.focus(); }
+
+  open.addEventListener("click", openLb);
+  close.addEventListener("click", closeLb);
+  lb.addEventListener("click", (e)=>{ if(e.target === lb) closeLb(); });
+  document.addEventListener("keydown", (e)=>{ if(e.key === "Escape" && lb.classList.contains("open")) closeLb(); });
+</script>
 </body>
 </html>
