@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Kategorien Übersicht V1 -->
+  <title>Inserate & Kategorien | Baumaschinen Marktplatz</title>
+  <meta name="description" content="Kategorien & Inserate im Baumaschinen-Marktplatz: Minibagger, Raupendumper, Bergbaumaschinen, Anbaugeräte, Ersatzteile, Mietpark sowie Dokumente und Ratgeber." />
+  <link rel="canonical" href="https://baumaschinen.github.io/inserate/" />
+  <meta name="robots" content="index,follow" />
+
+  <style>
+    :root{
+      --bg:#f6f7f9; --card:#ffffff; --text:#111827; --muted:#4b5563;
+      --link:#0f766e; --border:#e5e7eb; --accent:#f97316;
+      --shadow: 0 10px 30px rgba(0,0,0,.10); --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+    a{color:var(--link);text-decoration:none} a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin:0 auto;padding:20px}
+    header{position:sticky;top:0;background:rgba(246,247,249,.92);backdrop-filter:blur(8px);
+      border-bottom:1px solid var(--border);z-index:10}
+    nav{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+    nav a{padding:8px 10px;border:1px solid var(--border);border-radius:12px;background:#fff}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow)}
+    .muted{color:var(--muted)}
+    .h1{font-size:30px;line-height:1.2;margin:0 0 10px}
+    .kicker{display:inline-flex;gap:8px;align-items:center;font-size:13px;color:var(--muted)}
+    .dot{width:8px;height:8px;border-radius:999px;background:var(--accent);display:inline-block}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+    @media (max-width: 920px){.grid{grid-template-columns:1fr}}
+    .tile{padding:14px;border-radius:16px;border:1px solid var(--border);background:rgba(17,24,39,.01)}
+    .tile h2{margin:0 0 6px 0;font-size:16px}
+    .badge{display:inline-block;padding:4px 10px;border-radius:999px;border:1px solid var(--border);background:#fff;color:var(--muted);font-size:12px}
+    footer{border-top:1px solid var(--border);margin-top:26px;padding-top:18px}
+  </style>
+</head>
+
+<body>
+<header>
+  <div class="container">
+    <div style="font-weight:800">baumaschinen</div>
+    <div class="muted" style="font-size:13px">Inserate • Kategorien • Ratgeber • Dokumente • Ersatzteile • Mietpark</div>
+    <nav aria-label="Navigation">
+      <a href="/">Start</a>
+      <a href="/inserate/">Inserate</a>
+      <a href="/ratgeber/">Ratgeber</a>
+      <a href="/dokumente/">Dokumente</a>
+      <a href="/ersatzteile/">Ersatzteile</a>
+      <a href="/mietpark/">Mietpark</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="card">
+    <div class="kicker"><span class="dot"></span> Kategorien-Übersicht</div>
+    <h1 class="h1">Inserate & Kategorien</h1>
+    <p class="muted">
+      Wähle eine Kategorie. Später kannst du pro Kategorie eigene Unterseiten und einzelne Inserate ergänzen.
+      Die Begriffe „gebraucht“, „kaufen“ und „Kleinanzeigen“ nutzen wir im Text – die URL-Struktur bleibt sauber und einheitlich.
+    </p>
+
+    <div class="grid" aria-label="Kategorien">
+      <a class="tile" href="/inserate/minibagger/">
+        <h2>Minibagger <span class="badge">neu & gebraucht</span></h2>
+        <p class="muted">Kompaktbagger, Kurzheck, Zubehör, Kauf- und Prüfhinweise.</p>
+      </a>
+
+      <a class="tile" href="/inserate/raupendumper/">
+        <h2>Raupendumper <span class="badge">Transport</span></h2>
+        <p class="muted">Ketten-Dumper, Gelände, Nutzlast, Fahrwerkzustand.</p>
+      </a>
+
+      <a class="tile" href="/inserate/bergbaumaschinen/">
+        <h2>Bergbaumaschinen <span class="badge">Untertage</span></h2>
+        <p class="muted">Untertage-Lader, Dumper, Bohrgeräte und Zubehör.</p>
+      </a>
+
+      <a class="tile" href="/inserate/anbaugeraete/">
+        <h2>Anbaugeräte <span class="badge">Hydraulikhammer</span></h2>
+        <p class="muted">Hämmer, Greifer, Schnellwechsler – passend zur Trägerklasse.</p>
+      </a>
+
+      <a class="tile" href="/inserate/ersatzteile/">
+        <h2>Ersatzteile <span class="badge">Shop</span></h2>
+        <p class="muted">Verschleißteile, Filter, Dichtungen, Zubehör (je nach Sortiment).</p>
+      </a>
+
+      <a class="tile" href="/inserate/mietpark/">
+        <h2>Mietpark <span class="badge">Miete</span></h2>
+        <p class="muted">Mietangebote, Laufzeiten, Verfügbarkeit, Einsatzprofile.</p>
+      </a>
+    </div>
+
+    <p class="muted" style="margin-top:12px">
+      Hinweis: Wenn du die Kategorie-Unterseiten noch nicht hast, kannst du die Links erstmal auf „#“ setzen.
+      Alternativ erstelle ich dir direkt leere Kategorie-Seiten als Platzhalter.
+    </p>
+  </section>
+</main>
+
+<footer class="container">
+  <p class="muted">© baumaschinen</p>
+</footer>
+</body>
+</html>
