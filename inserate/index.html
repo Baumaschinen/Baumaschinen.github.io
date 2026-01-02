@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Kategorien Übersicht V1 -->
-  <title>Inserate & Kategorien | Baumaschinen Marktplatz</title>
-  <meta name="description" content="Kategorien & Inserate im Baumaschinen-Marktplatz: Minibagger, Raupendumper, Bergbaumaschinen, Anbaugeräte, Ersatzteile, Mietpark sowie Dokumente und Ratgeber." />
+  <!-- V1 – Inserate/Kategorien Übersicht -->
+  <title>Baumaschinen Inserate & Kategorien | Kaufen, Verkaufen, Mieten</title>
+  <meta name="description" content="Baumaschinen Inserate: Kaufen/Verkaufen (neu & gebraucht), Kategorien, Tipps von Profis, Dokumente (Bedienungsanleitung/CE), Mietpark, Ersatzteile und Anbaugeräte." />
   <link rel="canonical" href="https://baumaschinen.github.io/inserate/" />
   <meta name="robots" content="index,follow" />
 
@@ -28,13 +28,28 @@
     .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow)}
     .muted{color:var(--muted)}
     .h1{font-size:30px;line-height:1.2;margin:0 0 10px}
+    .section-title{font-size:18px;margin:0 0 10px}
     .kicker{display:inline-flex;gap:8px;align-items:center;font-size:13px;color:var(--muted)}
     .dot{width:8px;height:8px;border-radius:999px;background:var(--accent);display:inline-block}
+
     .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
     @media (max-width: 920px){.grid{grid-template-columns:1fr}}
+
     .tile{padding:14px;border-radius:16px;border:1px solid var(--border);background:rgba(17,24,39,.01)}
-    .tile h2{margin:0 0 6px 0;font-size:16px}
+    .tile h3{margin:0 0 6px 0;font-size:16px}
     .badge{display:inline-block;padding:4px 10px;border-radius:999px;border:1px solid var(--border);background:#fff;color:var(--muted);font-size:12px}
+
+    .quote{
+      margin:12px 0 0 0;
+      padding:12px 14px;
+      border-left:4px solid var(--accent);
+      background:rgba(249,115,22,.08);
+      border-radius:14px;
+      color:var(--text);
+    }
+    .quote p{margin:0}
+    .quote .muted{margin-top:6px;display:block}
+
     footer{border-top:1px solid var(--border);margin-top:26px;padding-top:18px}
   </style>
 </head>
@@ -43,64 +58,112 @@
 <header>
   <div class="container">
     <div style="font-weight:800">baumaschinen</div>
-    <div class="muted" style="font-size:13px">Inserate • Kategorien • Ratgeber • Dokumente • Ersatzteile • Mietpark</div>
+    <div class="muted" style="font-size:13px">Inserate (Listings) • Kategorien (Categories) • Ratgeber (Guides) • Dokumente (Documents) • Ersatzteile (Spare Parts) • Mietpark (Rental)</div>
+
     <nav aria-label="Navigation">
-      <a href="/">Start</a>
-      <a href="/inserate/">Inserate</a>
-      <a href="/ratgeber/">Ratgeber</a>
-      <a href="/dokumente/">Dokumente</a>
-      <a href="/ersatzteile/">Ersatzteile</a>
-      <a href="/mietpark/">Mietpark</a>
+      <a href="/">Start (Home)</a>
+      <a href="/inserate/">Inserate (Listings)</a>
+      <a href="/ratgeber/">Ratgeber (Guides)</a>
+      <a href="/dokumente/">Dokumente (Documents)</a>
+      <a href="/ersatzteile/">Ersatzteile (Spare Parts)</a>
+      <a href="/mietpark/">Mietpark (Rental)</a>
     </nav>
   </div>
 </header>
 
 <main class="container">
-  <section class="card">
-    <div class="kicker"><span class="dot"></span> Kategorien-Übersicht</div>
-    <h1 class="h1">Inserate & Kategorien</h1>
+
+  <section class="card" aria-label="Inserate und Kategorien">
+    <div class="kicker"><span class="dot"></span> Übersicht (Overview)</div>
+
+    <!-- H1: genau einmal pro Seite -->
+    <h1 class="h1">Baumaschinen Inserate & Kategorien</h1>
+
     <p class="muted">
-      Wähle eine Kategorie. Später kannst du pro Kategorie eigene Unterseiten und einzelne Inserate ergänzen.
-      Die Begriffe „gebraucht“, „kaufen“ und „Kleinanzeigen“ nutzen wir im Text – die URL-Struktur bleibt sauber und einheitlich.
+      Hier finden Sie Baumaschinen-Inserate (Listings) für <strong>Kaufen/Verkaufen</strong> – neu und gebraucht – sowie
+      Kategorien, Tipps von Profis und technische Orientierung. Die URL-Struktur bleibt bewusst einheitlich:
+      <strong>/inserate/</strong> ist der zentrale Einstieg.
     </p>
+
+    <!-- Hervorgehobener Textblock (Zitat/Callout) -->
+    <blockquote class="quote">
+      <p><strong>Profi-Grundsatz:</strong> Ein gutes Inserat ist ein Maschinenprofil – mit Technikdaten, klaren Bildern, optionalen Videos und (wenn verfügbar) Dokumenten. Das spart Zeit, reduziert Risiken und macht Angebote vergleichbar.</p>
+      <span class="muted">Tipp: Detailfotos (Fahrwerk/Unterboden, Hydraulik, Kabine, Anbaupunkte) sind oft wichtiger als „nur Außenansichten“.</span>
+    </blockquote>
+
+    <!-- SEO-Text, sauber mit H2/H3 -->
+    <section style="margin-top:14px" aria-label="Baumaschinen Erklärung und Einsatz">
+      <h2 class="section-title">Kaufen & Verkaufen: Was unter „Baumaschine“ wirklich verstanden wird</h2>
+
+      <p>
+        Auf baumaschinen.github.io bündeln wir <strong>Baumaschinen Inserate</strong> (Listings) und Informationen rund um den
+        <strong>Verkauf</strong>, die Auswahl und den professionellen Einsatz. Baumaschinen werden häufig nur mit klassischen
+        Baustellen im <strong>Straßenbau</strong> oder <strong>Hochbau</strong> verbunden – z. B. zum Aushub einer Baugrube,
+        für Fundamentarbeiten oder den Materialtransport.
+      </p>
+
+      <p>
+        In der Praxis werden Baumaschinen jedoch ebenso <strong>unter Tage im Bergbau</strong> eingesetzt – etwa für die
+        Verladung, den Transport und die Gewinnung von Erzen. Es gibt unterschiedliche Varianten in Baugröße, Aufbau und Form,
+        aber viele Eigenschaften sind vergleichbar: Hydraulik, Fahrwerk, Antrieb, Elektrik und Steuerung folgen ähnlichen
+        Prinzipien. Bei vielen Maschinentypen sind große Teile der Systeme <strong>technisch verwandt</strong>,
+        selbst wenn der Einsatzbereich (Tiefbau vs. Untertage) unterschiedlich ist.
+      </p>
+
+      <h3 class="section-title" style="margin-top:14px">Normgerechter Einsatz & Dokumentation</h3>
+      <p>
+        Wichtig ist der <strong>bestimmungsgemäße Gebrauch</strong> (intended use) und ein <strong>normgerechter Einsatz</strong>.
+        In der Praxis bedeutet das: Bedienung, Wartung und Nachweise müssen nachvollziehbar sein. Das Mitführen und Bereitstellen
+        von Dokumenten wie <strong>Bedienungsanleitung</strong>, <strong>CE-Konformität</strong> und weiteren Unterlagen
+        ist bei vielen Baumaschinen gleichartig organisiert.
+        Bei sehr alten Maschinen (z. B. <strong>vor 1995</strong>) kann die Dokumentationslage je nach Einzelfall anders sein –
+        dennoch bleiben sichere Bedienung und technische Transparenz zentral.
+      </p>
+
+      <h3 class="section-title" style="margin-top:14px">Maschinentypen & Bereiche</h3>
+      <p class="muted">
+        Typische Kategorien sind u. a. Minibagger, Bagger, Mobilbagger, Kettenbagger, Raupendumper, Muldenkipper,
+        Untertagemaschinen/Bergbaumaschinen, Anbaugeräte (z. B. Hydraulikhammer, Schnellwechsler) sowie Ersatzteile.
+        Zusätzlich finden Sie Tipps von Profis zur Auswahl, Prüfung und zum Kauf von Baumaschinen.
+      </p>
+    </section>
+
+    <h2 class="section-title" style="margin-top:16px">Kategorien (Categories) – Schnellzugriff</h2>
 
     <div class="grid" aria-label="Kategorien">
       <a class="tile" href="/inserate/minibagger/">
-        <h2>Minibagger <span class="badge">neu & gebraucht</span></h2>
-        <p class="muted">Kompaktbagger, Kurzheck, Zubehör, Kauf- und Prüfhinweise.</p>
+        <h3>Minibagger <span class="badge">neu & gebraucht</span></h3>
+        <p class="muted">Kompaktbagger, Kurzheck, Einsatzprofile, Kauf- und Prüfhinweise.</p>
       </a>
 
       <a class="tile" href="/inserate/raupendumper/">
-        <h2>Raupendumper <span class="badge">Transport</span></h2>
+        <h3>Raupendumper <span class="badge">Transport</span></h3>
         <p class="muted">Ketten-Dumper, Gelände, Nutzlast, Fahrwerkzustand.</p>
       </a>
 
       <a class="tile" href="/inserate/bergbaumaschinen/">
-        <h2>Bergbaumaschinen <span class="badge">Untertage</span></h2>
-        <p class="muted">Untertage-Lader, Dumper, Bohrgeräte und Zubehör.</p>
+        <h3>Bergbaumaschinen / Untertage <span class="badge">Mining</span></h3>
+        <p class="muted">Untertage-Lader, Untertage-Dumper, spezielle Einsatztechnik.</p>
       </a>
 
       <a class="tile" href="/inserate/anbaugeraete/">
-        <h2>Anbaugeräte <span class="badge">Hydraulikhammer</span></h2>
-        <p class="muted">Hämmer, Greifer, Schnellwechsler – passend zur Trägerklasse.</p>
+        <h3>Anbaugeräte <span class="badge">Attachments</span></h3>
+        <p class="muted">Hydraulikhämmer, Schnellwechsler, Greifer und weitere Werkzeuge.</p>
       </a>
 
       <a class="tile" href="/inserate/ersatzteile/">
-        <h2>Ersatzteile <span class="badge">Shop</span></h2>
-        <p class="muted">Verschleißteile, Filter, Dichtungen, Zubehör (je nach Sortiment).</p>
+        <h3>Ersatzteile <span class="badge">Spare Parts</span></h3>
+        <p class="muted">Verschleißteile und Komponenten für Wartung und Betriebssicherheit.</p>
       </a>
 
       <a class="tile" href="/inserate/mietpark/">
-        <h2>Mietpark <span class="badge">Miete</span></h2>
-        <p class="muted">Mietangebote, Laufzeiten, Verfügbarkeit, Einsatzprofile.</p>
+        <h3>Mietpark <span class="badge">Rental</span></h3>
+        <p class="muted">Miete statt Kauf, Verfügbarkeit, Laufzeiten und Einsatzprofile.</p>
       </a>
     </div>
 
-    <p class="muted" style="margin-top:12px">
-      Hinweis: Wenn du die Kategorie-Unterseiten noch nicht hast, kannst du die Links erstmal auf „#“ setzen.
-      Alternativ erstelle ich dir direkt leere Kategorie-Seiten als Platzhalter.
-    </p>
   </section>
+
 </main>
 
 <footer class="container">
